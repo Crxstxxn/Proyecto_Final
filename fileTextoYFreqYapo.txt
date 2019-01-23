@@ -1,0 +1,24 @@
+"Var1" "Freq"
+"1" "Arriendo" 600
+"2" "Audio, TV, video y fotografía" 200
+"3" "Autos, camionetas y 4x4" 1600
+"4" "Bolsos, bisutería y accesorios" 800
+"5" "Buses, camiones y furgones" 600
+"6" "Calzado" 200
+"7" "Celulares, teléfonos y accesorios" 600
+"8" "Computadores y accesorios" 200
+"9" "Consolas, videojuegos y accesorios" 200
+"10" "Deportes, gimnasia y accesorios" 200
+"11" "Electrodomésticos" 200
+"12" "Hobbies y outdoor" 200
+"13" "Jardín, herramientas y exteriores" 600
+"14" "Juguetes" 200
+"15" "Libros y revistas" 600
+"16" "Moda y vestuario" 200
+"17" "Muebles" 600
+"18" "Música y películas (DVDs, etc.)" 200
+"19" "Negocios, maquinaria y construcción" 400
+"20" "Otros artículos del hogar" 600
+"21" "Salud y belleza" 400
+"22" "Servicios" 200
+"23" "Vendo" 400
