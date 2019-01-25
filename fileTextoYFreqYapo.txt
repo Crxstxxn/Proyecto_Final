@@ -1,24 +1,22 @@
 "Var1" "Freq"
-"1" "Accesorios y piezas para vehículos" 1000
-"2" "Arriendo" 200
+"1" "Accesorios y piezas para vehículos" 3000
+"2" "Arriendo" 600
 "3" "Arte, antigüedades y colecciones" 200
 "4" "Audio, TV, video y fotografía" 200
-"5" "Autos, camionetas y 4x4" 400
-"6" "Busco empleo" 400
-"7" "Buses, camiones y furgones" 200
-"8" "Calzado" 1400
-"9" "Celulares, teléfonos y accesorios" 800
-"10" "Coches y artículos infantiles" 800
-"11" "Computadores y accesorios" 1000
-"12" "Deportes, gimnasia y accesorios" 200
-"13" "Electrodomésticos" 200
-"14" "Juguetes" 200
-"15" "Moda y vestuario" 200
-"16" "Muebles" 600
-"17" "Música y películas (DVDs, etc.)" 200
-"18" "Negocios, maquinaria y construcción" 800
+"5" "Autos, camionetas y 4x4" 1000
+"6" "Bicicletas, ciclismo y accesorios" 400
+"7" "Bolsos, bisutería y accesorios" 200
+"8" "Calzado" 200
+"9" "Celulares, teléfonos y accesorios" 200
+"10" "Computadores y accesorios" 400
+"11" "Deportes, gimnasia y accesorios" 200
+"12" "Electrodomésticos" 200
+"13" "Instrumentos musicales y accesorios" 200
+"14" "Jardín, herramientas y exteriores" 400
+"15" "Juguetes" 200
+"16" "Moda y vestuario" 1000
+"17" "Muebles" 400
+"18" "Negocios, maquinaria y construcción" 400
 "19" "Otros artículos del hogar" 200
 "20" "Otros productos" 200
-"21" "Salud y belleza" 200
-"22" "Servicios" 200
-"23" "Vendo" 200
+"21" "Servicios" 200

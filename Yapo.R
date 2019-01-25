@@ -68,7 +68,7 @@ if(exists("fileTextoYFreqYapo")){
   dfTextoYFreqYapo <- aggregate(cbind(Freq) ~ Var1, rbind(dfTextoYFreqYapo,dfTextoYFreqYapo), sum)
 }
 
-#Grafico de Barra de la información
+# Grafico de Barra de la información
 dfTextoYFreqYapo %>%
   ggplot() +
   aes(x = Var1 , y = Freq) +
@@ -77,3 +77,54 @@ dfTextoYFreqYapo %>%
 # Guardando información en txt
 write.table(dfTextoYFreqYapo, file="fileTextoYFreqYapo.txt")
 
+# Recolectando datos de Antofagasta
+for(i in 1:100){
+  print(paste("https://www.yapo.cl/antofagasta?ca=3_s&o=",i,sep = ""))
+  
+  paginaDescargada <- read_html(paste("https://www.yapo.cl/region_metropolitana?ca=15_s&o=",i,sep = ""))
+  contenidoYapo <- html_nodes(webpageYapo,'.category')
+  texto <- html_text(contenidoYapo)
+  todosLasCategorias <- c(todosLasCategorias,texto)
+}
+
+# Contando y pasando a dataframe
+tablaTextoYapo <- table(unlist(todosLasCategorias))
+dfTextoYFreqYapo <- as.data.frame(tablaTextoYapo)
+
+# Uniendo dos dataframes por Var1 sumando frecuencias
+if(exists("fileTextoYFreqYapo")){
+  print("Uniendo los DataFrames")
+  dfTextoYFreqYapo <- aggregate(cbind(Freq) ~ Var1, rbind(dfTextoYFreqYapo,dfTextoYFreqYapo), sum)
+}
+
+#Grafico de Barra de la información
+dfTextoYFreqYapo %>%
+  ggplot() +
+  aes(x = Var1 , y = Freq) +
+  geom_bar(stat="identity")
+
+# Recolectando datos de Los Lagos
+  for(i in 1:100){
+    print(paste("https://www.yapo.cl/los_lagos?ca=12_s&o=",i,sep = ""))
+    
+    paginaDescargada <- read_html(paste("https://www.yapo.cl/region_metropolitana?ca=15_s&o=",i,sep = ""))
+    contenidoYapo <- html_nodes(webpageYapo,'.category')
+    texto <- html_text(contenidoYapo)
+    todosLasCategorias <- c(todosLasCategorias,texto)
+  }
+
+# Contando y pasando a dataframe
+tablaTextoYapo <- table(unlist(todosLasCategorias))
+dfTextoYFreqYapo <- as.data.frame(tablaTextoYapo)
+
+# Uniendo dos dataframes por Var1 sumando frecuencias
+if(exists("fileTextoYFreqYapo")){
+  print("Uniendo los DataFrames")
+  dfTextoYFreqYapo <- aggregate(cbind(Freq) ~ Var1, rbind(dfTextoYFreqYapo,dfTextoYFreqYapo), sum)
+}
+
+#Grafico de Barra de la información
+dfTextoYFreqYapo %>%
+  ggplot() +
+  aes(x = Var1 , y = Freq) +
+  geom_bar(stat="identity")
